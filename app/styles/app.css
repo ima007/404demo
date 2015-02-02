@@ -1,3 +1,123 @@
-html, body {
-  margin: 20px;
+body{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  font-weight: 300;
+  background-color: #E7E9EC;
+  margin-top:0;
+  padding-top:0;
 }
+
+iframe{
+  border:0;
+}
+
+main{
+  width: 980px;
+  margin: 20px auto;
+  margin-top: 0px;
+}
+
+section{
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #eee;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+h1, h2, strong{
+  font-weight: 500;
+}
+
+fieldset,legend{
+  margin:0;
+  border:0;
+  outline:0;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  border-width: 1px;
+  border-style: solid;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  width: 40px;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  border-radius: 36px;
+  padding: 0;
+  height: 40px;
+  line-height: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0;
+  color: #00a0dc;
+  background-color: #fff;
+  border-color: #caccce;
+  background-image: -webkit-radial-gradient(#34b3e4,#34b3e4,#fff,#fff);
+  background-image: -moz-radial-gradient(#34b3e4,#34b3e4,#fff,#fff);
+  background-image: radial-gradient(#34b3e4,#34b3e4,#fff,#fff);
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 0;
+  -moz-background-size: 0;
+  background-size: 0;
+  -webkit-transition: color 150ms ease,background-size 150ms ease;
+  -moz-transition: color 150ms ease,background-size 150ms ease;
+  transition: color 150ms ease,background-size 150ms ease;
+}
+
+input[type="radio"]:after,
+input[type="checkbox"]:after{
+  content: "\2713";
+  color: #fff;
+  font-size: 20px;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked{
+  border-color: #34b3e4;
+  -webkit-background-size: 200% 200%;
+  -moz-background-size: 200% 200%;
+  background-size: 200% 200%;
+  color: #fff;
+}
+
+label{
+  padding-left: 10px;
+}
+
+label:nth-of-type(1)::after{
+  display: block;
+  content: " ";
+  margin: 5px 0;
+}
+
+.more-stuff, .user-content{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.inputs{
+  width: 350px;
+  margin: 0 40px;
+}
+
