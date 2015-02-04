@@ -1,7 +1,9 @@
-# Ember-todo
+# 404 demo
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+The goals of this "hackday" project:
+* Play with ember, and use it as a way to prototype a 404 implementation idea
+* Demonstrate how a 404 page could be used to predict a user's action. Perhaps they just mistyped the URL -- we should be able to cue off of that and present a valid URL or action.
+* When all else fails, demonstrate how a 404 page could ask about a user's intent, if we have no clue how/why they reached this page. This is a growth/engagement opportunity.
 
 ## Prerequisites
 
