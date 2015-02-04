@@ -5,6 +5,10 @@ The goals of this "hackday" project:
 * Demonstrate how a 404 page could be used to predict a user's action. Perhaps they just mistyped the URL -- we should be able to cue off of that and present a valid URL or action.
 * When all else fails, demonstrate how a 404 page could ask about a user's intent, if we have no clue how/why they reached this page. This is a growth/engagement opportunity.
 
+## Animated GIF demo
+
+![animated gif of demo](404demo.gif)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -14,6 +18,8 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* Optional - [Charles](http://www.charlesproxy.com/) If you want to iframe some external page's header locally. (For demo/prototyping purposes).
+
 
 ## Installation
 
