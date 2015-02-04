@@ -18,6 +18,8 @@ export default Ember.Route.extend({
       if(!model.name){ model.name = model.path; }
       if(model.path){ model.fullPath = 'http://www.linkedin.com/' + model.path; }
     }
+    //Prevent from autoplaying on load
+    results.youtubeOptions = {autoplay: 1};
 
     /*
     return Ember.$.getJSON('http://gdata.youtube.com/feeds/api/users/TEDtalksDirector/uploads?max-re‌​sults=5&v=2&alt=jsonc&orderby=published')
@@ -27,7 +29,7 @@ export default Ember.Route.extend({
       return model;
     });
     */
-    model.videos = Videos.FIXTURES;
+    model.video = Videos.FIXTURES;
     return model;
   }
 });

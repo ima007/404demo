@@ -10,7 +10,14 @@ var AllController = Ember.ObjectController.extend({
   }.property('selectedAction'),
   selectedThingy: function(){
     return this.get('selectedAction') !== '';
-  }.property('selectedAction')
+  }.property('selectedAction'),
+  actions:{
+    onChangedDesire: function(){
+      if(this.get('isProductive')){
+
+      }
+    }.observes('selectedAction')
+  }
 });
 
 export default AllController;

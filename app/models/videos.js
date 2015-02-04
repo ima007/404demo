@@ -3,10 +3,12 @@ import DS from 'ember-data';
 var Videos = DS.Model.extend({});
 
 Videos.reopenClass({
-  FIXTURES: [
-    //{'id': 'x1177phymxY'},
-    {'id': 'v84pD2g3gSk'}
-  ]
+  FIXTURES: {
+    'id': 'Oa82WNk0mis',
+    'playerid': function(){
+      return 'player'+this.get('id');
+    }
+  }
 });
 
 export default Videos;

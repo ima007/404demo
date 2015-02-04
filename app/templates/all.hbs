@@ -10,25 +10,26 @@
       <legend>While you're here...would you like to be productive, or have some fun?</legend>
       <div class="inputs">
 
-        {{radio-button value="productive" checked=selectedAction id="radio-productive"}}
+        {{radio-button value="productive" checked=selectedAction id="radio-productive" name="user-desire"}}
         <label for="radio-productive">I want to be <strong>productive</strong></label>
 
-        {{radio-button value="fun" checked=selectedAction id="radio-fun"}}
+        {{radio-button value="fun" checked=selectedAction id="radio-fun" name="user-desire"}}
         <label for="radio-fun">I want to have <strong>fun</strong></label>
       </div>
     </fieldset>
   </form>
 </section>
 
+{{! playing around with helpers, addons, computed properties }}
 <section {{bind-attr class="selectedThingy:show :more-stuff"}}>
-  <div {{bind-attr class="isProductive:show :user-content"}}>
+  {{#if isProductive}}
+  <div class="show user-content"}}>
     <p>You want to be productive! Then learn something:</p>
-    {{#each item in videos}}
-      {{ember-youtube ytid=item.id showControls=true}}
-    {{/each}}
+    {{ember-youtube ytid=video.id showControls=false name=video.playerid}}
   </div>
-  <div {{bind-attr class="isFun:show :user-content"}}>
-    <p>You want to have fun! Well, too  bad.</p>
+  {{/if}}
+  <div class="user-content" {{bind-attr class="isFun:show :user-content"}}>
+    <p>You want to have fun! Well, <a class="wiki-link" href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">life</a> isn't fair...</p>
     {{game-of-life options=gameOptions}}
   </div>
 </section>
